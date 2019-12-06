@@ -1,0 +1,536 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: 170px 1fr 150px;
+  grid-gap: 150px;
+  align-items: center;
+}
+
+.headerNav {
+  font-family: Noto Sans;
+  font-size: 1.18vw;
+}
+
+.headerNav > ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 0;
+}
+
+.headerNav > ul > li {
+  display: inline-block;
+  position: relative;
+}
+
+.headerNav > ul > li > a {
+  text-decoration: none;
+  color: #3e3e94;
+}
+
+.subMenu {
+  display: none;
+  position: absolute;
+  top: 19px;
+  padding: 0 5px;
+  list-style-type: none;
+  background-color: #3e3e94;
+  line-height: 25px;
+}
+
+.headerNav ul li:hover > .subMenu {
+  display: block;
+}
+
+.subMenu > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.subMenu > li > a:hover {
+  color: red;
+}
+
+.lang {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 5px;
+}
+
+.banner {
+  background-image: url("../img/Banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 232px 0;
+}
+
+.banner h1 {
+  font-family: Roboto;
+  font-size: 42px;
+  color: white;
+  margin: 0;
+}
+
+.banner p {
+  font-family: Roboto;
+  font-size: 20px;
+  color: white;
+  margin: 28px auto 50px auto;
+  max-width: 790px;
+}
+
+.banner button {
+  width: 172px;
+  height: 54px;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: Medium;
+  background-color: #4dcefd;
+  border: 0;
+  cursor: pointer;
+}
+
+.what {
+  padding: 112px 0 169px 0;
+}
+
+.what h2 {
+  text-align: center;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 36px;
+  color: #3e3e94;
+}
+
+.whatGrid {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+  text-align: center;
+}
+
+.whatContent {
+  margin-top: 87px;
+  padding: 50px 30px 63px 30px;
+  border-radius: 5px;
+  font-family: Roboto;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.whatContent h3 {
+  font-size: 24px;
+}
+
+.whatContent p {
+  font-size: 16px;
+}
+
+.whatContent:hover {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.whatContent.first:hover {
+  background-image: linear-gradient(
+      rgba(30, 30, 82, 0.5),
+      rgba(30, 30, 82, 0.5)
+    ),
+    url("../img/what1.png");
+}
+.whatContent.second:hover {
+  background-image: linear-gradient(
+      rgba(30, 30, 82, 0.5),
+      rgba(30, 30, 82, 0.5)
+    ),
+    url("../img/what2.png");
+}
+.whatContent.third:hover {
+  background-image: linear-gradient(
+      rgba(30, 30, 82, 0.5),
+      rgba(30, 30, 82, 0.5)
+    ),
+    url("../img/what3.png");
+}
+
+.tryUp {
+  background-image: url("../img/Rectangle\ 4.1.png");
+  padding: 60px 0 76px 0;
+  font-family: Roboto;
+}
+
+.tryUp h2 {
+  margin: 0 0 50 0;
+  font-size: 36px;
+  color: white;
+}
+
+.tryUpGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.tryUpGridImgI {
+  display: grid;
+  /* grid-template-rows: 1fr 2fr; */
+  grid-gap: 15px;
+}
+
+.tryUpGridImgII {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.tryUpGridImgIII {
+  display: grid;
+  /* grid-template-rows: 2fr 1fr; */
+  grid-gap: 15px;
+}
+
+.meet {
+  background-image: url("../img/Rectangle\ 4.png");
+  padding: 60px 0 71px 0;
+  font-family: Roboto;
+}
+
+.meet h2 {
+  margin: 0 0 40 0;
+  font-size: 36px;
+  color: white;
+}
+
+.meetGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 149px;
+}
+
+.meetActor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 60px;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 45px;
+}
+
+.meetContent {
+  text-align: center;
+}
+
+.meetContent h4 {
+  margin: 15px auto 6px auto;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.meetContent span {
+  margin: 0 auto 15px auto;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.meetContent p {
+  font-size: 16px;
+  color: #72a4d1;
+}
+
+.meetWords {
+  padding-top: 153px;
+}
+
+.meetWords p {
+  font-size: 26px;
+  font-weight: lighter;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.meetWords span {
+  font-size: 18px;
+  font-style: Medium;
+  color: white;
+}
+
+.meetWords span.second {
+  font-size: 14px;
+  font-style: Regular;
+  opacity: 0.5;
+}
+
+.meetWords div {
+  margin-top: 63px;
+  max-width: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.meetWords div img {
+  cursor: pointer;
+}
+
+.opacity {
+  opacity: 0.3;
+}
+
+.favJob {
+  padding: 55px 0 53px 0;
+  font-family: Roboto;
+  text-align: center;
+}
+
+.favJob h2 {
+  font-size: 36px;
+  color: #3e3e94;
+  margin: 0 auto 40px auto;
+}
+
+.favJobGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 80px;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 30px;
+}
+
+.favJobContent {
+  padding: 35px 35px 30px 35px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.6fr;
+  grid-row-gap: 30px;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+}
+
+.favJobContent img {
+  margin: auto;
+}
+
+.favJobContent span {
+  font-size: 18px;
+  color: #0e0e39;
+  line-height: 32px;
+}
+
+.favJobContent button {
+  background-color: #4dcefd;
+  border-radius: 100px;
+  font-size: 16px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.findJob {
+  background-image: url("../img/Form.jpg");
+  padding: 80px 0 60px 0;
+  font-family: Roboto;
+}
+
+.findJob h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+
+.findJob p {
+  margin: 12px auto 70px auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.findJobGrid {
+  display: grid;
+  grid-template-columns: 1fr 412px;
+  grid-column-gap: 73px;
+  padding: 60px 73px 70px 73px;
+  background-color: #eef2f6;
+  border-radius: 15px;
+}
+
+.findJobInfo {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  font-size: 18px;
+}
+
+.findJobInfo input {
+  border-radius: 15px;
+  padding-left: 10px;
+  border: 0;
+}
+
+.findJobCvUp {
+  font-size: 18px;
+  margin-right: 56px;
+}
+
+.findJobCvLink {
+  font-size: 18px;
+  color: #9393a4;
+}
+
+.findJobCvInput {
+  margin: 20px auto 15px auto;
+  border: 0;
+  cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+  border-radius: 100px;
+  background-color: white;
+  line-height: 48px;
+  width: 168px;
+  height: 48px;
+  box-shadow: 0px 4px 6px rgba(87, 87, 87, 0.2);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.findJobCv p {
+  color: #bfbfcc;
+  font-size: 16px;
+  margin-bottom: 31px;
+  text-align: left;
+}
+
+.findJobCv button {
+  width: 204px;
+  height: 54px;
+  background-color: #4dcefd;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 0;
+}
+
+footer {
+  background-color: #0e0e39;
+  font-family: Noto Sans;
+  padding: 66px 0 74px 0;
+}
+
+.footHeader {
+  margin-bottom: 40px;
+}
+
+.footContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 22px;
+  color: white;
+  border-bottom: 1px solid;
+  padding-bottom: 51px;
+}
+
+.footContent h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footContent ul {
+  padding: 0;
+}
+
+.footContent ul li {
+  list-style-type: none;
+  font-size: 18px;
+  margin: 17px 0;
+}
+
+.footContentIHR h3 a {
+  text-align: right;
+  margin-left: 90px;
+  color: #4dcefd;
+}
+
+.footIHR {
+  margin-top: 17px;
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  grid-column-gap: 12px;
+}
+
+.footIHRContent h4 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.footIHRContent p {
+  font-size: 14px;
+}
+
+.footIHRContent a {
+  color: #4dcefd;
+  font-size: 14px;
+}
+
+.footIntro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 200px;
+  padding: 50px 0 74px 0;
+  color: white;
+}
+
+.footIntroComp h2 {
+  font-size: 18px;
+}
+
+.footIntroComp p {
+  font-size: 16px;
+}
+
+.footIntroComp p a {
+  color: #4dcefd;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footIntroSocialGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+}
+
+.footIntroSocialGrid div {
+  background-color: #090a26;
+  border-radius: 15px;
+  height: 44px;
+  align-items: center;
+  text-align: center;
+}
+
+.footIntroSocialGrid div a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 44px;
+  color: #2d7df6;
+}
+
+.footIntroSocialGrid div a i {
+  color: white;
+  margin-right: 12px;
+}

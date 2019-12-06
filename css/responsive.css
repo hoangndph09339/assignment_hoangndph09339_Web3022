@@ -1,0 +1,51 @@
+/* @media (min-width: 576px) { */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+  .whatGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .tryUpGrid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+  }
+
+  .meetGrid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 41px;
+  }
+
+  .meetActor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 35px;
+  }
+  .favJobGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+  }
+  .findJobGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 30px;
+  }
+  .footContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+  }
+  .footIntro {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+}
